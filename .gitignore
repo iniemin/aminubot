@@ -1,0 +1,17 @@
+assets/cache/*
+downloads
+__pycache__
+error.log
+*.session
+*.session-journal
+.git
+.github
+.config
+.progress
+.vscode/*
+bin/*
+venv
+*.pyc 
+*.log 
+*.db 
+.env
