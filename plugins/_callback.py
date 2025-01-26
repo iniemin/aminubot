@@ -16,14 +16,14 @@ BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>
 
 main_help_button = [
     [
-        Button.inline("•• Pʟᴜɢɪɴ ••", data="reopen"),
-        Button.inline("Mᴇɴᴜ Vᴄ ••", data="inline_yins"),
+        Button.inline("•• ᴘʟᴜɢɪɴ ••", data="reopen"),
+        Button.inline("ᴍᴇɴᴜ ᴠᴄ ••", data="inline_yins"),
     ],
     [
-        Button.inline("⚙️ Aʟᴀᴛ Pᴇᴍɪʟɪᴋ", data="yins_langs"),
-        Button.url("Pᴇɴɢᴀᴛᴜʀᴀɴ ⚙️", url=f"t.me/{ayiin.bot.me.username}?start="),
+        Button.inline("⚙️ ᴀʟᴀᴛ ᴘᴇᴍɪʟɪᴋ", data="yins_langs"),
+        Button.url("ᴘᴇɴɢᴀᴛᴜʀᴀɴ ⚙️", url=f"t.me/{ayiin.bot.me.username}?start="),
     ],
-    [Button.inline("•• Kᴇᴍʙᴀʟɪ ••", data="close")],
+    [Button.inline("•• ᴋᴇᴍʙᴀʟɪ ••", data="close")],
 ]
 
 
@@ -43,7 +43,7 @@ async def on_plug_in_callback_query_handler(event):
     )
     if event.query.user_id == ayiin.me.id or event.query.user_id in sudoer:
         buttons = ayiin.paginateHelp(0, cmdHelp, "helpme")
-        text = f"**✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{ayiin._host}]•\n⍟ **ᴏᴡɴᴇʀ** {ayiin.me.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(cmdHelp)} **Modules**"
+        text = f"**✨ ᴇᴍɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{ayiin._host}]•\n⍟ **ᴏᴡɴᴇʀ** {ayiin.me.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(cmdHelp)} **Modules**"
         await event.edit(
             text,
             file=logoyins,
@@ -74,28 +74,28 @@ async def inline_handler(event):
         result = await event.builder.photo(
             file=logoyins,
             link_preview=False,
-            text=f"**✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{ayiin._host}]•\n⍟ **ᴏᴡɴᴇʀ :** {ayiin.me.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(cmdHelp)} **Modules**",
+            text=f"**✨ ᴇᴍɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{ayiin._host}]•\n⍟ **ᴏᴡɴᴇʀ :** {ayiin.me.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(cmdHelp)} **Modules**",
             buttons=main_help_button,
         )
     elif query.startswith("repo"):
         result = builder.article(
             title="Repository",
-            description="Repository Ayiin - Userbot",
-            url="https://t.me/AyiinChats",
+            description="Repository Emin - Userbot",
+            url="https://t.me/grupmedia",
             thumb=InputWebDocument(
                 logoyins,
                 0,
                 "image/jpeg",
                 []),
-            text="**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [AyiinXd](https://t.me/AyiinXd)\n✧ **sᴜᴘᴘᴏʀᴛ :** @AyiinChats\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Ayiin-Userbot](https://github.com/AyiinXd/Ayiin-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+            text="**Emin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [ᴇᴍɪɴ](https://t.me/iniemin)\n✧ **sᴜᴘᴘᴏʀᴛ :** @EminSupport\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Emin-Userbot](https://github.com/iniemin/aminubot)\n➖➖➖➖➖➖➖➖➖➖",
             buttons=[
                 [
                     custom.Button.url(
                         "ɢʀᴏᴜᴘ",
-                        "https://t.me/AyiinChats"),
+                        "https://t.me/grupmedia"),
                     custom.Button.url(
                         "ʀᴇᴘᴏ",
-                        "https://github.com/AyiinXd/Ayiin-Userbot"),
+                        "https://github.com/iniemin/aminubot"),
                 ],
             ],
             link_preview=False,
@@ -134,23 +134,23 @@ async def inline_handler(event):
         )
     else:
         result = builder.article(
-            title="✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✨",
-            description="Ayiin - Userbot | Telethon",
-            url="https://t.me/AyiinChannel",
+            title="✨ ᴇᴍɪɴ-ᴜsᴇʀʙᴏᴛ ✨",
+            description="Emin - Userbot | Telethon",
+            url="https://t.me/EminSupport",
             thumb=InputWebDocument(
                 logoyins,
                 0,
                 "image/jpeg",
                 []),
-            text=f"**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{ayiin.me.first_name}](tg://user?id={ayiin.me.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {botusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @AyiinChannel\n➖➖➖➖➖➖➖➖➖➖",
+            text=f"**Emin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{ayiin.me.first_name}](tg://user?id={ayiin.me.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {botusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @EminSupport\n➖➖➖➖➖➖➖➖➖➖",
             buttons=[
                 [
                     custom.Button.url(
                         "ɢʀᴏᴜᴘ",
-                        "https://t.me/AyiinChats"),
+                        "https://t.me/grupmedia"),
                     custom.Button.url(
                         "ʀᴇᴘᴏ",
-                        "https://github.com/AyiinXd/Ayiin-Userbot"),
+                        "https://github.com/iniemin/aminubot"),
                 ],
             ],
             link_preview=False,
@@ -214,10 +214,10 @@ async def gback_handler(event):
             "assets/inline3.png"
         ]
     )
-    if event.query.user_id == ayiin.me.id or event.query.user_id in sudoer:  # @Ayiin-Userbot
+    if event.query.user_id == ayiin.me.id or event.query.user_id in sudoer:  # @Emin-Userbot
         # https://t.me/TelethonChat/115200
         text = (
-            f"**✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{ayiin.me.first_name}](tg://user?id={ayiin.me.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(cmdHelp)} **Modules**")
+            f"**✨ ᴇᴍɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{ayiin.me.first_name}](tg://user?id={ayiin.me.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(cmdHelp)} **Modules**")
         await event.edit(
             text,
             file=logoyins,
