@@ -48,7 +48,7 @@ async def helpyins(event):
             try:
                 results = await event.client.inline_query(
                     ayiin.bot.me.username,
-                    "@AyiinChats"
+                    "@EminSupport"
                 )
                 await results[0].click(
                     event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
