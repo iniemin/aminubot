@@ -15,10 +15,10 @@ async def usit(event):
         event,
         f"""
 **Hai {me.first_name} Kalo Anda Tidak Tau Perintah Untuk Memerintah Ku Ketik** `{cmd}help` Atau Bisa Minta Bantuan Ke:
-⍟ **Group Support :** [𝙰𝚈𝙸𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃](t.me/AyiinChats)
-⍟ **Channel Ayiin :** [𝙰𝚈𝙸𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃](t.me/AyiinSupport)
-⍟ **Owner Repo :** [𝚈𝙸𝙽𝚂](t.me/AyiinXd)
-⍟ **Repo :** [𝙰𝚈𝙸𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃](https://github.com/AyiinXd/Ayiin-Userbot)
+⍟ **Group Support :** [𝙴𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃](t.me/grupmedia)
+⍟ **Channel Emin :** [𝙴𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃](t.me/EminSupport)
+⍟ **Owner Repo :** [𝙴𝙼𝙸𝙽](t.me/iniemin)
+⍟ **Repo :** [𝙴𝙼𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃](https://github.com/iniemin/aminubot)
 """
     )
 
@@ -44,7 +44,7 @@ cmdHelp.update(
     {
         "helper": f"**Plugin : **`helper`\
         \n\n  »  **Perintah :** `{cmd}ihelp`\
-        \n  »  **Kegunaan : **Bantuan Untuk Ayiin-Userbot.\
+        \n  »  **Kegunaan : **Bantuan Untuk Emin-Userbot.\
         \n\n  »  **Perintah :** `{cmd}listvar`\
         \n  »  **Kegunaan : **Melihat Daftar Vars.\
     "
